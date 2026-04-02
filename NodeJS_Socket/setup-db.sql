@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS cloudflare_socket_test;
+USE cloudflare_socket_test;
+
+CREATE TABLE IF NOT EXISTS messages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  message TEXT NOT NULL,
+  timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
