@@ -281,3 +281,7 @@ sudo cp -r dist/* /var/www/html/
 
 ---
 
+<img width="637" height="849" alt="image" src="https://github.com/user-attachments/assets/e40103e9-6b5d-422b-93dc-90a0f982c469" />
+
+<img width="628" height="207" alt="image" src="https://github.com/user-attachments/assets/41d7d9e9-6db0-4189-99e9-272bff8913a3" />
+
