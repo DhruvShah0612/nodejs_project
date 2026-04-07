@@ -102,6 +102,13 @@ EXIT;
 cd backend
 npm install
 ```
+---
+
+## ⚙️ Install Missing Dependency
+
+```bash
+npm install dotenv
+```
 
 ---
 
@@ -120,6 +127,14 @@ DB_HOST=localhost
 DB_USER=devuser
 DB_PASSWORD=StrongPassword123!
 DB_NAME=cloudflare_socket_test
+```
+
+---
+
+## ⚙️ Update server.js
+Add this at top:
+```bash
+require("dotenv").config();
 ```
 
 ---
@@ -214,9 +229,7 @@ pm2 restart backend
 ## 🔗 Step 14: Frontend Socket Configuration
 
 ```js
-const socket = io("/", {
-  transports: ["websocket"]
-});
+const socket = io("/", { transports: ["websocket", "polling"], reconnection: true });
 ```
 
 ---
